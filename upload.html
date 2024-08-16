@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <script src="../static/js/bootstrap.js"></script>
+</head>
+<body>
+<!-- Include Navbar -->
+    {% include 'navbar.html' %}
+
+    <h5 class="text-center text-success">The Product is successfully uploaded</h5>
+    <h5 class="text-center text-primary">{{message2}}</h5>
+    <section class="row bg-warning p-4">
+        <div class="col-md-6">
+            <!-- upload form -->
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="text" name="product_name" id="product_name" placeholder="Enter Product Name" class="form-control"> <br>
+
+                <textarea name="product_desc" id="product_desc" cols="30" rows="5" placeholder="Enter Product Description" class="form-control"></textarea><br>
+
+                <input type="number" name="product_cost" id="product_cost" class="form-control" placeholder="Enter Product Cost"> <br>
+
+                <input type="number" name="product_discount" id="product_discount" class="form-control" placeholder="Enter Product Discount"> <br>
+
+                <select name="product_category" id="product_category" class="form-control">
+                    <option value="Electronics">Groceries</option>
+                    <option value="Watches">Stationary</option>
+                    <option value="Fashion">Appliances</option>
+                    <option value="Shoes">Clothes</option>
+                    <option value="Groceries">Washing Equipments</option>
+                </select> <br>
+
+                <input type="file" name="product_image1" id="product_image1" class="form-control" required> <br>
+
+                <input type="file" name="product_image2" id="product_image2" class="form-control" required> <br>
+
+                <input type="file" name="product_image3" id="product_image3" class="form-control" required> <br>
+
+                <button type="submit" class="btn btn-outline-dark">Upload Product</button>
+
+
+
+            </form>
+
+        </div>
+        <!-- col 1 -->
+
+        <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" width="100%"/>
+        </div>
+
+    </section>
+    
+</body>
+</html>

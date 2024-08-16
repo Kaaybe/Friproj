@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Choice</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #011d0a;
+            background-color: #a2d6af;
+        }
+        .choice-buttons {
+            text-align: center;
+        }
+        .choice-buttons button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="choice-buttons">
+            <h1>Welcome to Tenders</h1>
+            <p>Please select your role to proceed:</p>
+            <button type="button" class="btn btn-outline-success btn-lg" onclick="redirectTo('home')">I am a Consumer</button>
+            <button type="button" class="btn btn-outline-success btn-lg" onclick="redirectTo('supplier')">I am a Supplier</button>
+        </div>
+    </div>
+
+    <!-- JavaScript for redirection -->
+    <script>
+        function redirectTo(role) {
+            if (role === 'home') {
+                window.location.href = '/home'; // Replace with your consumer page URL
+            } else if (role === 'supplier') {
+                window.location.href = '/supplier'; // Replace with your supplier page URL
+            }
+        }
+    </script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

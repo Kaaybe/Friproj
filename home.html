@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/lightslider.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    
+    <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/lightslider.js"></script>
+    <script src="../static/js/script.js"></script>
+
+    <style>
+        .watermark {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Ensure the watermark stays behind content */
+            opacity: 0.; /* Adjust transparency */
+        }
+        .watermark img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the screen without distortion */
+        }
+        .head{
+        font: amagro;
+        color: #000;
+
+        }
+        .abb{
+            /* background-color: #f7f3f5; */
+            background-color: rgb(103, 141, 109);
+            padding: 15px;
+            
+        }
+
+        .team{
+            background-color: antiquewhite;
+            
+        }
+        .team:hover{
+            transform: scale(1.02);
+        }
+        .service-title{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: xx-large;
+            color: darkgreen;
+            text-decoration: underline;
+            
+        }
+        .service-card{
+            background-color: rgb(139, 137, 123);
+            height: 100%;
+            border-radius: 20px;
+            padding: 15px;
+        }
+        .clean{
+            font-size: 16px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div>
+        <div class="watermark">
+            <img src="../static/images/wall6.jpg" alt="Watermark">
+        </div>
+        
+        <div>
+            {% include 'navbar.html' %}
+        </div>       
+        <br>    
+        {% include 'carousel.html' %}
+        <br><br>
+        <section id="mission" class="py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-8">
+                        <h4></h4>                    
+                        <p class="clean mt-4">
+                            Welcome to our platform, where businesses showcase their products and tenders. Whether you're a buyer looking for the best deals or a seller aiming to reach a broader audience, our website is designed to cater to your needs.
+                        </p>
+                        <p class="clean mt-5">
+                            Explore a wide range of products across different industries, find the best tenders, and connect with businesses that align with your goals. Our user-friendly interface ensures you can easily navigate and find exactly what you're looking for.
+                        </p>
+                        <a href="/tenders" class="btn btn-outline-success btn-lg mt-4">Explore Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <br><br>
+        
+            <div id="abb" class="abb justify-content-center text-center">
+                <h2 class="display-4 font-weight-bold" style="text-decoration: underline;">About Our Tenders Marketplace</h2>
+                <br>
+                <div class="section ">
+                    <h2 class="head">INTRODUCTION</h2>
+                    <p>Welcome to our comprehensive guide on tenders, bidders, and the sales process. This page provides valuable insights into how tenders work, who the bidders are, and the dynamics of sales in various industries.</p>
+                </div>
+        
+                <div class="section">
+                    <h2 class="head">TENDERS</h2>
+                    <p>A tender is a formal offer to carry out work or supply goods at a fixed price. Tenders are used in various industries, including construction, manufacturing, and services, to ensure transparency and competitiveness. The process usually involves issuing a Request for Proposal (RFP) or Invitation to Tender (ITT), where companies submit their bids based on the provided specifications.</p>
+                </div>
+        
+                <div class="section">
+                    <h2 class="head">BIDDER</h2>
+                    <p>Bidders are individuals or companies who respond to a tender by submitting their proposals. Each bidder must adhere to the requirements set out in the tender documents and offer their best possible terms. The selection process involves evaluating each bid based on criteria such as price, experience, and quality of the proposal.</p>
+                </div>
+        
+                <div class="section">
+                    <h2 class="head">SALES OF PRODUCTS</h2>
+                    <p>Once a tender is awarded, the successful bidder enters into a contract to provide the goods or services. The sales process involves negotiating terms, finalizing contracts, and fulfilling the order. Effective sales strategies and customer service play a crucial role in ensuring successful transactions and long-term business relationships.</p>
+                </div>
+            </div>
+            
+        <br><br>
+
+        <div class="container my-5">
+            <div class="row">
+                <!-- Returns Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-undo service-icon text-primary"></i>
+                        <h5 class="service-title">Returns</h5>
+                        <p>Easily return any items you are not satisfied with within 30 days of purchase. Our hassle-free return process ensures a smooth experience for you. For more details on how to initiate a return, please visit our Returns page.</p>
+                    </div>
+                </div>
+                <!-- Shipping Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-truck service-icon text-primary"></i>
+                        <h5 class="service-title">Shipping</h5>
+                        <p>Enjoy reliable and prompt delivery with our shipping options. We offer various shipping methods to meet your needs, with tracking available for all orders. For shipping rates and estimated delivery times, check out our Shipping page.</p>
+                    </div>
+                </div>
+                <!-- Track Order Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-search service-icon text-primary"></i>
+                        <h5 class="service-title">Track Order</h5>
+                        <p>Stay informed about your order's journey from our warehouse to your doorstep. Use our order tracking tool to get real-time updates and estimated delivery times. Visit our Track Order page to track your current orders.</p>
+                    </div>
+                </div>
+                <!-- Privacy Policy Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-lock service-icon text-primary"></i>
+                        <h5 class="service-title">Privacy Policy</h5>
+                        <p>Your privacy is our priority. We are committed to protecting your personal information and ensuring your data is handled securely. For a comprehensive overview of how we collect, use, and safeguard your information, review our Privacy Policy.</p>
+
+                    </div>
+                </div>
+                <!-- Terms of Service Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-file-alt service-icon text-primary"></i>
+                        <h5 class="service-title">Terms of Service</h5>
+                        <p>Our Terms of Service outline the rules and guidelines for using our website and services. By accessing and using our site, you agree to comply with these terms. Please read our Terms of Service carefully to understand your rights and obligations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Team Section Start -->
+        <section id="team" class="py-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h2 class="section-title">Meet Our Team</h2>
+                        <p class="section-subtitle">Our dedicated professionals are here to help you.</p>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <!-- Team Member 1 -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow">
+                            <img src="../static/images/pp1.jpg" class="card-img-top" alt="Team Member 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Jack Jill</h5>
+                                <p class="card-text">CEO & Founder</p>
+                                <p class="card-text">John leads our company with a passion for innovation and excellence.</p>                       
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow">
+                            <img src="../static/images/pp2.jpg" class="card-img-top" alt="Team Member 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Sandra Smith</h5>
+                                <p class="card-text">Chief Marketing Officer</p>
+                                <p class="card-text">Jane is in charge of our marketing strategies and campaigns.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow">
+                            <img src="../static/images/pp3.jpg" class="card-img-top" alt="Team Member 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Kingston Xavier</h5>
+                                <p class="card-text">Lead Developer</p>
+                                <p class="card-text">Emily is the tech genius behind our innovative solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team Section End -->
+    
+        <!-- Footer -->
+        <footer class="footer bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <!-- About Us -->
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="footer-logo mb-3">
+                            <a href="/home" class="text-white font-weight-bold" aria-label="Go to Home">Tenders.Ke</a>
+                        </div>
+                        <p class="mb-4">Providing high-quality products to make your life better. Discover our range of products and find the perfect fit for you.</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com" aria-label="Facebook" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com" aria-label="Twitter" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com" aria-label="Instagram" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+                            <a href="https://ke.linkedin.com" aria-label="LinkedIn" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+        
+                    <!-- Quick Links -->
+                    <div class="col-md-2 mb-4 mb-md-0">
+                        <h5 class="font-weight-bold">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="/home" class="text-white" style="text-decoration: none;">Home</a></li>
+                            <li><a href="/tenders" class="text-white" style="text-decoration: none;">Tenders</a></li>
+                            <li><a href="#about-us" class="text-white" style="text-decoration: none;">About Us</a></li>
+                            <li><a href="#contact" class="text-white" style="text-decoration: none;">Contact</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Customer Service -->
+                    <div class="col-md-2 mb-4 mb-md-0">
+                        <h5 class="font-weight-bold">Customer Service</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white" style="text-decoration: none;">Returns</a></li>
+                            <li><a href="#" class="text-white" style="text-decoration: none;">Shipping</a></li>
+                            <li><a href="#" class="text-white" style="text-decoration: none;">Track Order</a></li>
+                            <li><a href="#" class="text-white" style="text-decoration: none;">Privacy Policy</a></li>
+                            <li><a href="#" class="text-white" style="text-decoration: none;">Terms of Service</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Newsletter Signup -->
+                    <div class="col-md-4">
+                        <h5 class="font-weight-bold">Subscribe to Our Newsletter</h5>
+                        <p class="mb-4">Get the latest updates and offers delivered directly to your inbox.</p>
+                        <form class="newsletter">
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Enter your email" required>
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center py-3 ">
+                <p class="mb-0">&copy; 2024 Tenders.ke. All rights reserved.</p>
+            </div>
+        </footer>
+    
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </div>
+
+</body>
+</html>

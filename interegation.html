@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integration Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .container {
+            margin-top: 20px;
+        }
+        .api-section, .accounting-section, .erp-section {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .api-section h2, .accounting-section h2, .erp-section h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <header class="mb-4">
+        <h1 class="text-center">Integration Dashboard</h1>
+    </header>
+
+    <!-- API Integration Section -->
+    <div class="api-section">
+        <h2>API Integration</h2>
+        <form>
+            <div class="form-group">
+                <label for="api-url">API URL</label>
+                <input type="text" class="form-control" id="api-url" placeholder="Enter API URL">
+            </div>
+            <div class="form-group">
+                <label for="api-key">API Key</label>
+                <input type="text" class="form-control" id="api-key" placeholder="Enter API Key">
+            </div>
+            <button type="submit" class="btn btn-primary">Test Connection</button>
+        </form>
+    </div>
+
+    <!-- Accounting Integration Section -->
+    <div class="accounting-section">
+        <h2>Accounting Integration</h2>
+        <form>
+            <div class="form-group">
+                <label for="account-id">Account ID</label>
+                <input type="text" class="form-control" id="account-id" placeholder="Enter Account ID">
+            </div>
+            <div class="form-group">
+                <label for="account-password">Password</label>
+                <input type="password" class="form-control" id="account-password" placeholder="Enter Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Connect to Accounting System</button>
+        </form>
+    </div>
+
+    <!-- ERP Integration Section -->
+    <div class="erp-section">
+        <h2>ERP Integration</h2>
+        <form>
+            <div class="form-group">
+                <label for="erp-server">ERP Server Address</label>
+                <input type="text" class="form-control" id="erp-server" placeholder="Enter ERP Server Address">
+            </div>
+            <div class="form-group">
+                <label for="erp-username">Username</label>
+                <input type="text" class="form-control" id="erp-username" placeholder="Enter Username">
+            </div>
+            <div class="form-group">
+                <label for="erp-password">Password</label>
+                <input type="password" class="form-control" id="erp-password" placeholder="Enter Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Connect to ERP System</button>
+        </form>
+    </div>
+
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

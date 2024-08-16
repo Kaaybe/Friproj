@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search and Filter</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .product-card {
+            margin-bottom: 20px;
+        }
+        .navbar-nav {
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">MyShop</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <!-- Add other nav items here -->
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" id="searchInput" placeholder="Search products..." aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="filterPriceLow">Price: Low to High</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="filterPriceHigh">Price: High to Low</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="filterLocation">Filter by Location</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Product List -->
+    <div class="container mt-4">
+        <div class="row" id="productList">
+            <!-- Example Product Card -->
+            <div class="col-md-4 product-card">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">Price: $25</p>
+                        <p class="card-text">Location: New York</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more product cards here -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Custom JS for filtering -->
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const searchText = this.value.toLowerCase();
+            const products = document.querySelectorAll('.product-card');
+            products.forEach(product => {
+                const title = product.querySelector('.card-title').textContent.toLowerCase();
+                const text = product.querySelector('.card-text').textContent.toLowerCase();
+                if (title.includes(searchText) || text.includes(searchText)) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        });
+
+        // Example filter functionality for price and location
+        document.getElementById('filterPriceLow').addEventListener('click', function() {
+            // Implement price sorting logic here
+        });
+
+        document.getElementById('filterPriceHigh').addEventListener('click', function() {
+            // Implement price sorting logic here
+        });
+
+        document.getElementById('filterLocation').addEventListener('click', function() {
+            // Implement location filtering logic here
+        });
+    </script>
+</body>
+</html>

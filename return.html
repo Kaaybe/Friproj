@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Information Section</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS for icons (optional) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        .service-card {
+            border: 1px solid #dee2e6;
+            border-radius: .25rem;
+            padding: 20px;
+            text-align: center;
+            transition: box-shadow .3s ease;
+        }
+        .service-card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,.1);
+        }
+        .service-icon {
+            font-size: 2rem;
+            margin-bottom: .5rem;
+        }
+        .service-title {
+            font-size: 1.25rem;
+            margin-bottom: .5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <!-- Returns Card -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card">
+                    <i class="fas fa-undo service-icon text-primary"></i>
+                    <h5 class="service-title">Returns</h5>
+                    <p>Information on how to return products and request refunds.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            <!-- Shipping Card -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card">
+                    <i class="fas fa-truck service-icon text-primary"></i>
+                    <h5 class="service-title">Shipping</h5>
+                    <p>Details on shipping options and delivery times.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            <!-- Track Order Card -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card">
+                    <i class="fas fa-search service-icon text-primary"></i>
+                    <h5 class="service-title">Track Order</h5>
+                    <p>Track the status of your order with our easy-to-use tool.</p>
+                    <a href="#" class="btn btn-primary">Track Now</a>
+                </div>
+            </div>
+            <!-- Privacy Policy Card -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card">
+                    <i class="fas fa-lock service-icon text-primary"></i>
+                    <h5 class="service-title">Privacy Policy</h5>
+                    <p>Read about our commitment to protecting your privacy.</p>
+                    <a href="#" class="btn btn-primary">Read Policy</a>
+                </div>
+            </div>
+            <!-- Terms of Service Card -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card">
+                    <i class="fas fa-file-alt service-icon text-primary"></i>
+                    <h5 class="service-title">Terms of Service</h5>
+                    <p>Understand the terms and conditions of our services.</p>
+                    <a href="#" class="btn btn-primary">View Terms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

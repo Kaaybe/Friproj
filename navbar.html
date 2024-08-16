@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <script src="../static/js/bootstrap.js"></script>
+
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px 20px;
+        color: white;
+        width: 100%;
+        /* box-sizing: border-box; */
+    }
+    
+    .logo {
+        font-size: 1.5em;
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-links li {
+        margin: 0 10px;
+        position: relative;
+    }
+    
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 15px;
+    }
+    
+    .nav-links a:hover, .dropdown:hover .dropdown-content {
+        background-color: #575757;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        min-width: 150px;
+        z-index: 1;
+    }
+    
+    .dropdown-content li {
+        display: block;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .right-section {
+        display: flex;
+        align-items: center;
+    }
+    
+    .toggle-bar {
+        display: none;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    
+    .search-filter input {
+        padding: 5px;
+        margin-right: 10px;
+    }
+    
+    .search-filter button {
+        padding: 5px 10px;
+    }
+    
+    .auth-buttons button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        background-color: #575757;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .auth-buttons button:hover {
+        background-color: #777;
+    }
+    
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: #333;
+            position: absolute;
+            top: 60px;
+            left: 0;
+        }
+    
+        .nav-links li {
+            margin: 0;
+            text-align: center;
+            width: 100%;
+        }
+    
+        .right-section {
+            flex-direction: column;
+        }
+    
+        .toggle-bar {
+            display: block;
+        }
+    }
+     
+    
+    </style>
+</head>
+<body>
+    <section class="row">
+        <div class="col-md-12">
+            <nav id="about" class="navbar navbar-expand-lg navbar-light bg-dark ">
+                <div class="logo"><a href=""></a></div>
+                <ul class="nav-links">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="#abb">About Us</a></li>       
+                    <li><a href="/events">News and Events</a></li>
+                    <li><a href="/tenders">Tenders</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <div class="right-section">
+                    <div class="toggle-bar">☰</div>
+                    <div class="search-filter">                                                     
+                        <input type="text" placeholder="Search">
+                        <button>Filter</button>
+                    </div>
+                    <form class="d-flex">            
+                        <a href="/login" class="btn btn-outline-success ms-2">Login</a>
+                        <a href="/register" class="btn btn-outline-success ms-2">Register</a>
+        
+                        
+                    </form>
+                </div>
+            </nav>
+
+        </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const toggleBar = document.querySelector(".toggle-bar");
+    const navLinks = document.querySelector(".nav-links");
+    
+    toggleBar.addEventListener("click", function() {
+        navLinks.classList.toggle("active");
+    });
+    });
+    
+    </script>
+
+</body>

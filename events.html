@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenders - News and Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .watermark {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Ensure the watermark stays behind content */
+            opacity: 0.2; /* Adjust transparency */
+        }
+        .watermark img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the screen without distortion */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-left-button">
+        <button class="btn btn-outline-success"><a href="/home" style="text-decoration: none;">Return Home</a></button>
+    </div>
+    <div class="watermark">
+        <img src="../static/images/wall6.jpg" alt="Watermark">
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Tenders - News and Events</h1>
+        
+        <ul class="nav nav-tabs mt-4" id="tendersTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="news-tab" data-bs-toggle="tab" data-bs-target="#news" type="button" role="tab" aria-controls="news" aria-selected="true">News</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="events-tab" data-bs-toggle="tab" data-bs-target="#events" type="button" role="tab" aria-controls="events" aria-selected="false">Events</button>
+            </li>
+        </ul>
+        
+        <div class="tab-content mt-3" id="tendersTabContent">
+            <!-- News Section -->
+            <div class="tab-pane fade show active" id="news" role="tabpanel" aria-labelledby="news-tab">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../static/images/news.jpg" class="img-fluid rounded-start" alt="News Image">
+                            <img src="../static/images/news1.jpg" class="img-fluid rounded-start" alt="News Image">
+                            <img src="../static/images/news2.jpg" class="img-fluid rounded-start" alt="News Image">
+                            <img src="../static/images/news3.jpg" class="img-fluid rounded-start" alt="News Image">
+
+
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Tender News Title</h5>
+                                <p class="card-text">The content is structured under various categories to encompass different aspects of the tendering process.
+                                    <br><br>
+                                    <p> <h4> 1. Regulatory Updates and Compliance </h4>
+                                    Suppliers often need to stay informed about changes in procurement regulations, tender submission rules, and compliance requirements. Updates on new laws or amendments can significantly impact how they prepare and submit bids. For example:
+                                    New Procurement Regulations: Information on upcoming changes to national or regional procurement regulations.
+                                    Compliance Requirements: Details about mandatory certifications or documentation needed for specific types of tenders.
+                                    Ethical Standards in Procurement: Updates on best practices and ethical guidelines for suppliers. </p>
+                                    
+                                    <p> <h4> 2. Tendering Opportunities </h4>
+                                    Regular news about open tenders in various industries helps suppliers identify new business opportunities. These could include:                               
+                                    Government Tenders: Announcement of new government contracts across various sectors.
+                                    Private Sector Opportunities: Tenders issued by large corporations for products or services.
+                                    International Tenders: Opportunities for suppliers to bid on tenders in different countries or regions.</p>
+                                    
+                                    <p> <h4> 3. Tendering Best Practices </h4>
+                                    Suppliers are always looking for ways to improve their bidding strategies. Articles on best practices can provide valuable insights, such as:
+                                    Effective Bid Writing Tips: Advice on how to craft a compelling tender submission.
+                                    Understanding Tender Evaluation Criteria: Insight into what buyers are looking for in a tender submission.
+                                    Risk Management in Tendering: Strategies for identifying and mitigating risks during the bidding process. </p>
+
+                                    <p> <h4> 4. Industry Trends and Insights </h4>
+                                    Keeping up with trends in their industry can help suppliers tailor their tender submissions to meet current demands. News topics might include:
+                                
+                                    Technological Advancements: How new technology is impacting procurement processes and tendering.
+                                    Market Trends: Information on emerging trends in various industries that could affect tender opportunities.
+                                    Sustainability and Green Procurement: News on how sustainability is influencing tender requirements. </p>
+
+                                    <p> <h4> 5. Success Stories and Case Studies </h4>
+                                    Suppliers can learn from the successes of others. Articles featuring case studies or success stories might include:
+                                    
+                                    Winning Tender Strategies: Analysis of successful tender submissions and what made them stand out.
+                                    Supplier Success Stories: Profiles of suppliers who have won significant tenders and how they achieved their success.
+                                    Innovative Approaches in Tendering: Examples of creative or innovative strategies used in tender bids. </p>
+
+                                    <p> <h4> 6. Economic and Political News </h4>
+                                    Economic shifts or political changes can directly influence procurement processes and the availability of tenders. Relevant news might cover:
+                                    
+                                    Economic Forecasts: Analysis of how economic conditions are likely to affect public and private sector spending.
+                                    Impact of Political Changes on Tendering: How new government policies or leadership changes might impact procurement. </p>
+                                    
+                                    <p> <h4> 7. Legal and Contractual Issues </h4>
+                                    Suppliers need to be aware of legal issues that could affect their contracts. Topics of interest might include:
+                                    
+                                    Contract Law Updates: News on changes in contract law that could impact supplier agreements.
+                                    Dispute Resolution: Advice on handling disputes related to tenders or contracts.
+                                    Supplier Debriefings: Information on what to expect from a debriefing after a tender evaluation [1]. </p>
+                                    <p> <h4>8. Technology and Innovation in Tendering </h4>
+                                    The adoption of new technologies in the tendering process can offer both challenges and opportunities for suppliers. Relevant topics could include:
+                                    
+                                    E-Procurement Systems: News on the implementation of electronic procurement systems and how suppliers can adapt.
+                                    AI and Automation in Tendering: How artificial intelligence and automation are being used in evaluating tenders.
+                                    Cybersecurity in Procurement: Best practices for ensuring data security during the tender submission process. </p>
+                                    <p> <h4> 9. Networking and Industry Events </h4>
+                                    News about upcoming events where suppliers can network or learn more about tendering might include:
+                                    
+                                    Procurement Conferences and Workshops: Information on events focused on tendering and procurement.
+                                    Industry Trade Shows: Announcements of trade shows where suppliers can showcase their products or services.
+                                    Webinars and Online Training: Opportunities for suppliers to learn more about the tendering process through online events. </p>
+                                    <p> <h4>10. Financial News </h4>
+                                    Suppliers may also be interested in financial news that could affect their business operations, such as:
+                                    
+                                    Funding Opportunities: News about grants, loans, or other funding sources available to suppliers.
+                                    Financial Health of Buyers: Information on the financial stability of companies or governments issuing tenders.
+                                    Exchange Rate Fluctuations: How currency exchange rates might impact the cost of fulfilling a tender. </p>
+                                    </p>
+                                <p class="card-text"><small class="text-muted">Posted on August 15, 2024</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat news cards as needed -->
+            </div>
+
+            <!-- Events Section -->
+            <div class="tab-pane fade" id="events" role="tabpanel" aria-labelledby="events-tab">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../static/images/events.jpg" class="img-fluid rounded-start" alt="Event Image">
+                            <img src="../static/images/events1.jpg" class="img-fluid rounded-start" alt="Event Image">
+                            <img src="../static/images/events2.jpg" class="img-fluid rounded-start" alt="Event Image">
+                            <img src="../static/images/events3.jpg" class="img-fluid rounded-start" alt="Event Image">
+
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Upcoming Tender Event</h5>
+                                <p class="card-text"><p><h4>11. Global Tendering Opportunities </h4>
+                                    In a globalized economy, suppliers might seek news about international tendering opportunities, including:
+                                    
+                                    Emerging Markets: News about tender opportunities in emerging markets.
+                                    Cross-Border Tendering: Tips and updates on bidding for tenders in foreign countries.
+                                    International Trade Agreements: How trade agreements impact tendering opportunities between countries.</p>
+                                    <p> <h4>12. Environmental and Social Governance (ESG) in Tendering</h4>
+                                    As ESG becomes increasingly important in procurement, suppliers may find the following topics useful:
+                                    
+                                    ESG Criteria in Tenders: Updates on tenders that prioritize environmental and social governance criteria.
+                                    Green Tenders: News about tenders focused on sustainability and environmental impact.
+                                    Social Impact in Procurement: How social factors are being integrated into tender evaluations.</p>
+                                    <p><h4> 13. Public-Private Partnerships (PPPs) </h4>
+                                    News on the role of public-private partnerships in tendering processes could include:
+                                    
+                                    New PPP Projects: Announcements of new public-private partnerships that involve tendering.
+                                    Impact of PPPs on Tendering: Analysis of how PPPs influence the availability and structure of tenders.
+                                    Case Studies of Successful PPP Tenders: Examples of tenders that have successfully been awarded through PPPs.</p>
+                                    <p> <h4>14. Tendering Tools and Resources </h4>
+                                    Suppliers might appreciate news about tools and resources that can aid in their tendering efforts:
+                                    
+                                    Tender Management Software: Reviews and news about software that can help suppliers manage their tender submissions.
+                                    Bid Writing Services: Information on services that can assist suppliers in preparing their tenders.
+                                    Resource Libraries: Access to templates, checklists, and guides for tendering.</p>
+                                    <p> <h4>15. Procurement Policy Changes</h4>
+                                    Changes in procurement policies can have a significant impact on tendering processes. Relevant news might include:
+                                    
+                                    Policy Announcements: News about changes in procurement policies at the national or regional level.
+                                    Impact on Suppliers: Analysis of how new policies will affect suppliers' ability to win tenders.
+                                    Consultation Opportunities: Information on how suppliers can participate in consultations on procurement policy changes. </p>
+                                    <p><h4>16. Procurement Ethics and Integrity</h4>
+                                    Suppliers may also be interested in news about ethics and integrity in procurement, including:
+                                    
+                                    Anti-Corruption Measures: News on efforts to combat corruption in tendering processes.
+                                    Transparency in Procurement: Updates on initiatives to increase transparency in tender evaluations.
+                                    Ethical Procurement Practices: Best practices for maintaining integrity in the bidding process.</p>
+                                    <p> <h4>17. Training and Development Opportunities</h4>
+                                    Suppliers might seek news on opportunities to enhance their skills and knowledge in tendering, such as:
+                                    
+                                    Certification Programs: Information on certification programs relevant to procurement and tendering.
+                                    Professional Development Courses: News about courses or training programs that can help suppliers improve their tendering skills.
+                                    Mentorship Programs: Opportunities for suppliers to receive guidance and support from experienced professionals.</p>
+                                    <p> <h4>18. Tendering Challenges and Solutions</h4>
+                                    News addressing common challenges in tendering and potential solutions might include:
+                                    
+                                    Overcoming Bid Rejections: Tips on how to handle and learn from rejected tenders.
+                                    Navigating Complex Tender Requirements: Strategies for dealing with particularly challenging or detailed tender specifications.
+                                    Improving Tender Success Rates: Advice on how to increase the likelihood of winning tenders.</p>
+                                    <p><h4>19. Strategic Partnerships and Alliances</h4>
+                                    Suppliers might also be interested in news about forming strategic partnerships to improve their chances of winning tenders:
+                                    
+                                    Joint Ventures for Tendering: News on how suppliers are collaborating to bid on larger or more complex tenders.
+                                    Partnership Opportunities: Information on potential partners for specific types of tenders.
+                                    Case Studies of Successful Alliances: Examples of how partnerships have led to successful tender bids.</p>
+                                    <p> <h4>20. Tendering in Crisis Situations</h4>
+                                    In times of crisis, tendering processes may be affected, and suppliers might find the following topics relevant:
+                                    
+                                    Emergency Procurement: News on tenders related to emergency situations, such as natural disasters or pandemics.
+                                    Adaptation Strategies: Advice on how suppliers can adapt their tendering strategies during crises.
+                                    Government Support for Suppliers: Information on government programs or initiatives to support suppliers during challenging times.</p></p>
+                                <p class="card-text"><small class="text-muted">Event Date: August 25, 2024</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat event cards as needed -->
+            </div>
+        </div>
+    </div>
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- About Us -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="footer-logo mb-3">
+                        <a href="/home" class="text-white font-weight-bold" aria-label="Go to Home">Tenders.Ke</a>
+                    </div>
+                    <p class="mb-4">Providing high-quality products to make your life better. Discover our range of products and find the perfect fit for you.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" aria-label="Facebook" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com" aria-label="Twitter" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" aria-label="Instagram" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+                        <a href="https://ke.linkedin.com" aria-label="LinkedIn" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="font-weight-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/home" class="text-white" style="text-decoration: none;">Home</a></li>
+                        <li><a href="/tenders" class="text-white" style="text-decoration: none;">Tenders</a></li>
+                        <li><a href="#about-us" class="text-white" style="text-decoration: none;">About Us</a></li>
+                        <li><a href="#contact" class="text-white" style="text-decoration: none;">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Customer Service -->
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="font-weight-bold">Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Returns</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Shipping</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Track Order</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Terms of Service</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Newsletter Signup -->
+                <div class="col-md-4">
+                    <h5 class="font-weight-bold">Subscribe to Our Newsletter</h5>
+                    <p class="mb-4">Get the latest updates and offers delivered directly to your inbox.</p>
+                    <form class="newsletter">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3 ">
+            <p class="mb-0">&copy; 2024 Tenders.ke. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Include Font Awesome for the icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

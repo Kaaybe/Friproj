@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenders, Bidders, Auctioneers, and Sales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 0.5em;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 1em;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: white;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5em;
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .watermark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the watermark stays behind content */
+    opacity: 0.2; /* Adjust transparency */
+}
+.watermark img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the screen without distortion */
+}
+
+    </style>
+</head>
+<body>
+    {%include 'navbar.html'%}
+    <header>
+        <h1>Tenders, Bidders, Auctioneers, and Sales</h1>
+    </header>
+    <nav>
+        <a href="#tenders">Tenders</a>
+        <a href="#bidders">Bidders</a>
+        <a href="#auctioneers">Auctioneers</a>
+        <a href="#sales">Sales</a>
+    </nav>
+    <div class="container">
+        <div class="watermark">
+            <img src="../static/images/wall4.jpg" alt="Watermark">
+        </div>
+        <section id="tenders">
+            <h2>Tenders</h2>
+            <p>Tenders are formal invitations for suppliers to bid on contracts to supply goods or services. They are usually used for large-scale projects or purchases and are a way to ensure transparency and competitiveness in the procurement process.</p>
+        </section>
+        <section id="bidders">
+            <h2>Bidders</h2>
+            <p>Bidders are individuals or organizations that submit proposals in response to a tender. They compete to offer the best terms, which can include price, delivery schedules, and quality of goods or services. The selection process is typically based on evaluating these proposals against predefined criteria.</p>
+        </section>
+        <section id="auctioneers">
+            <h2>Auctioneers</h2>
+            <p>Auctioneers facilitate the auction process, where goods or services are sold to the highest bidder. They play a crucial role in managing the auction, setting the pace, and ensuring that the process runs smoothly. Auctioneers can be involved in various types of auctions, including live, online, and silent auctions.</p>
+        </section>
+        <section id="sales">
+            <h2>Sales</h2>
+            <p>Sales refer to the transaction process where goods or services are sold to buyers. This can include various methods such as direct sales, online sales, and auction sales. The sales process typically involves negotiation, closing the deal, and handling post-sale services.</p>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- About Us -->
+                <div class="col-md-4">
+                    <div class="footer-logo mb-4">
+                        <a href="/home">Tenders.Ke</a>
+                    </div>
+                    <p class="mb-4">Providing high-quality products to make your life better. Discover our range of products and find the perfect fit for you.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" class="fab fa-facebook-f"></a>
+                        <a href="https://x.com/" class="fab fa-twitter"></a>
+                        <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                        <a href="https://ke.linkedin.com/" class="fab fa-linkedin-in"></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-2">
+                    <div class="links">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="/home">Home</a></li>
+                            <li><a href="/tenders">Tenders</a></li>
+                            <li><a href="#abb">About Us</a></li>
+                            <li><a href="#social-icons">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Customer Service -->
+                <div class="col-md-2">
+                    <div class="links">
+                        <h5>Customer Service</h5>
+                        <ul>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="col-md-4">
+                    <h5>Subscribe to Our Newsletter</h5>
+                    <p>Get the latest updates and offers delivered directly to your inbox.</p>
+                    <form class="newsletter">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3">
+            <p class="mb-0">&copy; 2024 Tenders.ke All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

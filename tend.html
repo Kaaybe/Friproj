@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .back-button {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <a href="index.html" class="btn btn-primary back-button">Back to Main Page</a>
+        <h1 id="categoryTitle">Products</h1>
+        <div id="productList" class="row">
+            <!-- Products will be inserted here dynamically -->
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const category = urlParams.get('category');
+            const categoryTitle = document.getElementById('categoryTitle');
+            const productList = document.getElementById('productList');
+            
+            categoryTitle.textContent = `${category.charAt(0).toUpperCase() + category.slice(1)} Products`;
+
+            // Example products data
+            const products = {
+                electronics: [
+                    { name: 'Smartphone', description: 'Latest model with high performance.' },
+                    { name: 'Laptop', description: 'High-end laptop for gaming and work.' }
+                ],
+                fashion: [
+                    { name: 'T-shirt', description: 'Comfortable and stylish.' },
+                    { name: 'Jeans', description: 'Classic denim jeans.' }
+                ],
+                home: [
+                    { name: 'Sofa', description: 'Comfortable and stylish sofa.' },
+                    { name: 'Table', description: 'Wooden dining table.' }
+                ]
+            };
+
+            if (products[category]) {
+                products[category].forEach(product => {
+                    const productCard = document.createElement('div');
+                    productCard.className = 'col-md-4 mb-4';
+                    productCard.innerHTML = `
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">${product.name}</h5>
+                                <p class="card-text">${product.description}</p>
+                            </div>
+                        </div>
+                    `;
+                    productList.appendChild(productCard);
+                });
+            } else {
+                productList.innerHTML = '<p>No products available for this category.</p>';
+            }
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
